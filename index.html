@@ -4,9 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <title>Accessible Form UI</title>
 </head>
 <body>
-    
+    <div class="container">
+      <div class="UserInfo">
+        <label for="Name">Full Name</label><br>
+        <input type="text" id="Name" value="What should we call you?"><br>
+
+        <label for="email">Email</label><br>
+        <input type="email" id="email" value="john@doe.com">
+        <p id="emailError"></p>
+        <br><br>
+
+        <label for="password">Enter Password</label><br>
+        <div class="password-container">
+          <input type="password" id="password" value="mysecretpassword">
+          <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+        </div><br>
+
+        <label for="confirm-password">Confirm Password</label><br>
+        <div class="password-container">
+          <input type="password" id="password" value="mysecretpassword">
+          <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+        </div>
+
+        <button id="UpdateButton">Update Profile</button>
+      </div>
+
+
+        <div class="stats">
+          <h1>65%</h1><br><br>
+          <p style="font-weight: 540; font-size: 20px;">Profile Completeness</p><br>
+            <div class="bckgrnd">
+              <P style="opacity: 0.5;" class="text-with-line">Create Account</P><br>
+              <P style="opacity: 0.5;">Update Roeadmap Progress</P><br>
+              <P style="opacity: 0.5;">Setup Public Profile</P><br>
+              <P>Compltete your first project</P><br>
+              <P>invite your friends</P><br>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
-</html>it
+</html>
